@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import JPYCBox from './components/JPYCBox';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <JPYCBox 
+        amount={100} // 投げ銭金額
+        contractAddress={"0xbD9c419003A36F187DAf1273FCe184e1341362C0"} // ネットワークごとのコントラクトアドレス
+        to={"0x"} // 投げ銭先
+      />
+    </React.Fragment>
   );
 }
 
