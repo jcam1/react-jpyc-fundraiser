@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 import { TipProps, Window } from '../types/types';
 import {erc20Abi} from '../utils/erc20Abi';
-import './JPYCBox.css';
+import './styles/JPYCBox.css';
 import Web3 from 'web3';
 
 declare const window: Window;
